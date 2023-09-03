@@ -28,3 +28,8 @@ private void beiShowByYear_EditValueChanged(object sender, EventArgs e) {
 ## Files to Review
 
 * [Form1.cs](./CS/FilterEvent/Form1.cs) (VB: [Form1.vb](./VB/FilterEvent/Form1.vb))
+
+
+## See Also
+
+* [Filter DevExpress Data-Aware Controls - WinForms Cheat Sheet](https://supportcenter.devexpress.com/ticket/details/t904977/filter-devexpress-data-aware-controls-winforms-cheat-sheet)
