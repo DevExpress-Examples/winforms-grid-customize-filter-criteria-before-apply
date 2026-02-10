@@ -62,7 +62,7 @@ Namespace FilterEvent
             Me.GridView.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colShipName, Me.colOrderDate, Me.colFreight})
             Me.GridView.GridControl = Me.GridControl
             Me.GridView.Name = "GridView"
-            AddHandler Me.GridView.SubstituteFilter, New System.EventHandler(Of DevExpress.Data.SubstituteFilterEventArgs)(AddressOf Me.GridView_SubstituteFilter)
+            Me.GridView.SubstituteFilter += New System.EventHandler(Of DevExpress.Data.SubstituteFilterEventArgs)(AddressOf Me.GridView_SubstituteFilter)
             ' 
             ' colShipName
             ' 
@@ -119,7 +119,7 @@ Namespace FilterEvent
             Me.beiShowByYear.Name = "beiShowByYear"
             Me.beiShowByYear.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.Caption
             Me.beiShowByYear.Width = 100
-            AddHandler Me.beiShowByYear.EditValueChanged, New System.EventHandler(AddressOf Me.beiShowByYear_EditValueChanged)
+            Me.beiShowByYear.EditValueChanged += New System.EventHandler(AddressOf Me.beiShowByYear_EditValueChanged)
             ' 
             ' repositoryItemComboBox1
             ' 
@@ -169,7 +169,7 @@ Namespace FilterEvent
             Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            Me.Load += New System.EventHandler(AddressOf Me.Form1_Load)
             CType((Me.GridControl), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.GridView), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.barManager1), System.ComponentModel.ISupportInitialize).EndInit()

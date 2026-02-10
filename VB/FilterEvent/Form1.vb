@@ -1,7 +1,10 @@
 Imports System
+Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data
 Imports System.Drawing
+Imports System.Linq
+Imports System.Text
 Imports System.Windows.Forms
 Imports DevExpress.Data.Filtering
 Imports DevExpress.Data
@@ -31,7 +34,7 @@ Namespace FilterEvent
             Dim filter As CriteriaOperator = GridView.ActiveFilterCriteria
             GridView.BeginDataUpdate()
             Try
-                GridView.ActiveFilterCriteria = Nothing
+                Me.GridView.ActiveFilterCriteria = Nothing
                 GridView.ActiveFilterCriteria = filter
             Finally
                 GridView.EndDataUpdate()
